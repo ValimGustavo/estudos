@@ -70,6 +70,7 @@ function buscar(){
 
     buscarArquivo.then(function(conteudo){
         document.getElementById('text').innerHTML = conteudo;
+        return Error("criado");
     }).catch(function(mensagem){
         console.log(mensagem);
     })
