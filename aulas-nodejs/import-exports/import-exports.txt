@@ -1,0 +1,22 @@
+CJS:
+
+const foo = require("./foo")
+module.exports = { foo, bar: 2 }
+
+ESM:
+
+import foo from "./foo"
+export default { foo, bar: 2 }
+
+
+
+export eh um objeto, assim eh possivel usar o {obj1, obj2} que vai retornar
+os modulos como um obj.
+
+podendo dividir as em variaveis com {obj1, obj2} = {obj1, obj2}
+    ou  
+var1 = {obj1, obj2};
+var1.obj1;
+
+formas:
+https://www.sitepoint.com/understanding-module-exports-exports-node-js/
