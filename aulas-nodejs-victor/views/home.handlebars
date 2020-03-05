@@ -1,0 +1,14 @@
+<h1>Home</h1>
+<section>
+    <h4>Lista dos ultimos posts</h4>    
+    {{#each posts}}
+        <article>
+            <p>{{dataValues.titulo}}</p>
+            <span>{{dataValues.conteudo}}</span>
+            <hr>            
+        </article>
+        <a href="/deletarPostagem/{{dataValues.id}}"><button>Deletar</button></a>
+        <hr>
+    {{/each}}
+    
+</section>
