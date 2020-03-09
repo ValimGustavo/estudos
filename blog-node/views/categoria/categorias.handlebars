@@ -1,0 +1,17 @@
+<h2>Lista de categorias</h2>
+
+    {{#each listaCategoria}}
+            <h5>{{ nome }}</h5>
+            <p>{{ slug }}</p>
+            <a href="/admin/categoria/editar/{{ _id }}"><button>Editar {{ nome }}</button></a>
+            <form action="/admin/categoria/banco/deletar" method="post">
+                <input type="hidden" name="id" value="{{ _id }}">
+                <input type="submit" value="deletar">
+            </form>
+       <hr> 
+      {{else}}
+        <h1 class="mt-4">Nenhuma categoria registrada</h1>
+    {{/each}}
+  
+    
+<a href="/admin/categoria/adicionar"><button class="btn btn-success">Adicionar categoria</button></a>
