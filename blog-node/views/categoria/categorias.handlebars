@@ -3,10 +3,10 @@
     {{#each listaCategoria}}
             <h5>{{ nome }}</h5>
             <p>{{ slug }}</p>
-            <a href="/admin/categoria/editar/{{ _id }}"><button>Editar {{ nome }}</button></a>
+            <a href="/admin/categoria/editar/{{ _id }}"><button class="btn btn-success">Editar {{ nome }}</button></a>
             <form action="/admin/categoria/banco/deletar" method="post">
                 <input type="hidden" name="id" value="{{ _id }}">
-                <input type="submit" value="deletar">
+                <button class="btn btn-danger mt-2" type="submit" value="deletar">Deletar</button>
             </form>
        <hr> 
       {{else}}

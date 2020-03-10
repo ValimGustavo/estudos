@@ -1,0 +1,11 @@
+{{#each posts}}
+    <div class="card">
+        <div class="card-body">
+            <a href="/postagem/{{slug}}">
+                <h4>{{titulo}}</h4>
+            </a>
+        </div>
+    </div>
+{{else}}
+    <div class="alert alert-danger">Sem posts registradas nessa categoria</div>
+{{/each}}
